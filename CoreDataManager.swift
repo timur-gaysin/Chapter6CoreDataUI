@@ -12,7 +12,7 @@ class CoreDataManager{
     let persistenceContainer: NSPersistentContainer
     
     init(){
-        persistenceContainer = NSPersistentContainer(name: "DateModel")
+        persistenceContainer = NSPersistentContainer(name: "DataModel")
         persistenceContainer.loadPersistentStores {(description, error) in
             if let error = error{
                 fatalError("Core Data failed to initialize \(error.localizedDescription)")
